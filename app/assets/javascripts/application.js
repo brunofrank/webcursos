@@ -3,8 +3,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap-typeahead
-//= require modulejs
-//= require paths
 //= require mvpready-core.js
 //= require mvpready-admin.js
 //= require nprogress
