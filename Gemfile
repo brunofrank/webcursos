@@ -28,6 +28,7 @@ gem 'enumerate_it', '~> 1.2.0'
 gem 'pg', '~> 0.17.1'
 gem 'nprogress-rails' # Show loading on Tudolinks page
 gem 'will_paginate', '~> 3.0' # Paginação
+gem 'rails_12factor'
 
 group :doc do
   gem 'sdoc', require: false
