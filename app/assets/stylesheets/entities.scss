@@ -1,0 +1,59 @@
+// Place all the styles related to the entities controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.thumbnail{
+  margin-top: 10px
+}
+
+.pricing-header{
+  min-height: 135px;
+}
+
+.pricing-plan-label{
+  display: table-cell;
+  vertical-align: middle;
+  height: 80px;
+}
+
+.pricing-plan-amount-ann {
+  color: #46a546;
+  font-size: 36px !important;
+  font-weight: 600;
+}
+
+.pricing-plan.selected{
+  border-color: red;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(255, 5, 5, 0.5);
+  -moz-box-shadow:    0px 2px 2px 0px rgba(255, 5, 5, 0.5);
+  box-shadow:         0px 2px 2px 0px rgba(255, 5, 5, 0.5);
+}
+
+.choose-plan-action .select-plan{
+  display: block;
+}
+
+.pricing-plan .choose-plan-action .current-plan{
+  display: none;
+}
+
+.pricing-plan.selected .choose-plan-action .current-plan{
+  display: block;
+}
+
+.pricing-plan.selected .choose-plan-action .select-plan{
+  display: none;
+}
+
+#plan-select label{
+  font-weight: normal !important;
+}
+
+.trial-ends{
+  margin-bottom: 50px;
+  color: red;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}

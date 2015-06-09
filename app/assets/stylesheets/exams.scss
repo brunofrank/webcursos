@@ -1,0 +1,279 @@
+// Place all the styles related to the Exams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#exam-preview{
+  display: none;
+  text-align: center;
+}
+
+#exam-preview.saved a,
+#exam-preview a {
+  margin-bottom: 10px;
+}
+
+#exam-preview.saved  {
+  display: table-cell;
+}
+
+#exam-preview img {
+  width: 370px;
+}
+
+.alert{
+  margin-top: 20px;
+}
+
+#exam-upload{
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  height: 400px;
+  font-size: 18px;
+  text-align: center;
+  color: #555555;
+  vertical-align: middle;
+  border: dashed 2px #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;  
+}
+
+#exam-upload.error{
+  border-color: red;
+}
+
+#exam-upload-error{
+ text-align: center;
+}
+
+div.title {
+  color:#555555;
+  font-size:18px;
+  font-weight:bold;
+  font-family:tahoma, arial, sans-serif;
+}
+input.upload {
+  left:14px;
+  top: 0px;
+  margin:0;
+  bottom:0;
+  padding:0;
+  opacity:0;
+  height:400px;
+  outline:none;
+  cursor:inherit;
+  position:absolute;
+  font-size:19px !important;
+}
+
+#report-actions{
+  width: 90px;
+  height: 90px;
+  position:fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+.circle-btn{
+  text-decoration: none;
+  background-color: #6685a4;
+  color: #fff;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  font-size: 40px;
+  text-align: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;  
+  padding-top: 10px;
+  position: fixed;
+  bottom: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  transition: 0.5s;  
+  z-index: 3;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.circle-btn:link,
+.circle-btn:visited,
+.circle-btn:hover,
+.circle-btn:active,
+.circle-btn-secondary:link,
+.circle-btn-secondary:visited,
+.circle-btn-secondary:hover,
+.circle-btn-secondary:active{
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.secondary-action-btn:hover{
+  color: white;
+}
+
+.secondary-action-btn{
+  background-color: #ce312c;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  position:fixed;
+  transition: 0.5s;  
+  bottom: 25px;  
+  right: 55px;
+  color: #fff;
+  z-index: 2;  
+  opacity: 0.0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */  
+}
+
+.third-action-btn:hover{
+  color: white;
+}
+.third-action-btn{
+  background-color: #ce312c;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  position:fixed;
+  transition: 0.5s;  
+  bottom: 25px;
+  right: 55px;
+  color: #fff;
+  z-index: 1; 
+  opacity: 0.0; 
+}
+
+#report-actions:hover{
+  height: 300px;
+}
+
+
+
+#report-actions:hover .circle-btn{
+  transition: 0.5s;  
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */    
+}
+
+#report-actions:hover .third-action-btn{
+  transition: 0.5s;  
+  bottom: 185px;
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */    
+}
+
+#report-actions:hover .secondary-action-btn{
+  transition: 0.5s;  
+  bottom: 110px;  
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */      
+}
+
+#exam-frases {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#exm-box{
+  margin: 75px 1% 1% 1%;
+  border: solid thin #ccc;  
+  overflow: scroll;
+}
+
+#exm-box-pdf{
+  margin: 60px 0px 0px 0px;
+  border: solid thin #ccc;  
+  overflow: scroll;
+}
+
+#exm-box img#exam-image{
+  width: 100%;
+}
+
+#exam-frases li{
+  list-style: none;
+  display: inline-block;
+  width: auto;
+  padding: 5px;
+  border: solid thin #ccc;
+  height: auto;
+  margin: 3px;
+  font-size: 18px;
+  border-radius: 10px;  
+  cursor: pointer;
+}
+
+#exam-frases li:hover{
+  background-color: #eee;
+}
+
+#report-modal textarea#exam_result{
+  height: 100px;
+}
+
+#zoom-btns{
+  width: 180px;
+  height: 90px;
+  position:fixed;
+  bottom: 00px;
+  left: 30px
+}
+
+
+@media(max-width:455px) {
+  #exam-frases {
+    height: 220px;
+    overflow-y: scroll;
+  }
+
+  .status-box{
+    text-align: left !important;
+  }  
+
+  #exm-box img#exam-image{
+    width: 300%;
+  }
+}
+
+.tag-label{
+  font-weight: bold;
+  color: black;
+  margin-right: 10px;
+}
+
+.label{
+  padding: 5px;
+  font-size: 12px;
+}
+
+.status-box{
+  text-align: right;
+}
+
+.actions{
+  margin-top: 13px;
+}
+
+.rotate90{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);  
+}
+
+.rotate180{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);  
+}
+
+.rotate270{
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  transform: rotate(270deg);  
+}

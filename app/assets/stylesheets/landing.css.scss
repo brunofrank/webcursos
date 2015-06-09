@@ -1,0 +1,235 @@
+//= require font-awesome
+//= require bootstrap
+//= require mvpready-landing
+//= require mvpready-flat 
+//= require animate
+//= require_self 
+
+@import "//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic";
+@import "//fonts.googleapis.com/css?family=Oswald:400,300,700";
+@import "//fonts.googleapis.com/css?family=Audiowide";
+
+.navbar-header .navbar-brand{
+  padding-top: 18px;
+  font-size: 30px;
+  font-family: 'Audiowide', cursive;
+}
+
+.logo-name{
+  font-family: 'Audiowide', cursive; 
+}
+
+.masthead-actions{
+  margin-top: 20px;
+  float: right;
+}
+
+.masthead-form{
+  margin: 0px auto !important;
+}
+
+.post-script{
+  margin-top: 150px;
+  font-size: 70%;
+}
+
+.masthead{
+  background: image-url('carrosel-bag.jpg');  
+  border-bottom: none;
+}
+
+.masthead-title{
+  font-size: 56px;
+  color: #444; 
+}
+
+.underline{
+  font-size: 12px !important;
+}
+
+.masthead-text{
+  color: #444;
+  font-size: 24px;
+}
+
+#diferentials{
+  color: #444;
+  font-size: 24px;
+}
+
+.content-title{
+  font-size: 36px;
+}
+
+.mini-feature-text{
+  font-size: 24px;
+}
+
+.mini-feature-title{
+  padding-top: 5px;
+  font-size: 24px;
+}
+
+.mini-feature-text p{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.testimonial{
+  font-size: 120%;
+}
+
+.pricing-header{
+  min-height: 135px;
+}
+
+.pricing-plan-label{
+  display: table-cell;
+  vertical-align: middle;
+  height: 80px;
+}
+
+#content{
+  margin-top: 60px;
+}
+
+p.error-inline{
+  position: relative;
+  top: 0;
+  display: inline-block !important;
+  padding: 2px 10px;
+  margin: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  background: #b94a48;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+p.error-inline-fixed{
+  position: relative;
+  top: 0;
+  display: none;
+  padding: 2px 10px;
+  margin: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  background: #b94a48;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.tool-title{
+  font-size: 40px;
+  text-align: center;
+}
+.making-exam img {
+  padding: 10px;
+  border: solid thin #ccc;
+  background-color: #fff;  
+  border-radius: 10px;
+}
+
+.pricing-plan-ask{
+  display: block;
+  padding: 10px;
+  margin: -15px -15px 0;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;  
+  min-height: 167px;
+  padding-top: 60px;
+}
+
+.pricing-plan{
+  min-height: 690px;
+}
+
+ul.pricing-plan-details li{
+  min-height: 71px;
+  font-size: 16px;
+}
+
+.plan-lane{
+  padding: 0px;
+  width: 20%;
+}
+
+.plan-includes-top{
+  margin-top: 287px;
+}
+
+.plan-include{
+  padding: 26px 0px 26px 0px;
+  text-align: right;
+  border-top: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+  border-radius: 4px 0px 0px 4px;  
+  background-color: #F2F2F2;
+}
+
+.plan-include.last{
+  border-bottom: 1px solid #DDD;  
+}
+
+.plan-include span{
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.plan-detail{
+  padding-right: 0px;
+}
+
+.plan-include-mobile{
+  display: none;
+}
+
+.required {
+  color: #444;
+}
+
+@media (max-width: 767px) {
+  .plan-detail{
+    display: none !important;
+  }
+
+  .plan-lane{
+    padding: 0px;
+    width: 90%;
+    margin: 0 auto;
+  }  
+
+  .plan-include-mobile  {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+div.alert.flash{
+  display: none;
+  position: absolute;
+  top: 60px !important;
+  left: 0px;
+  z-index: 9999999;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.feature-2-cols{
+  margin-left: 10%;
+  width: 40%;
+}
+#stats-page{
+  font-size: 12px;
+}
+
+.testimonial-text{
+  min-height: 200px;
+}

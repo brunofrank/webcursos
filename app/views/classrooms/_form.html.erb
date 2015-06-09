@@ -1,0 +1,10 @@
+<%= simple_form_for(@classroom) do |f| %>
+  <%= f.error_notification %>
+  
+  <%= f.input :student_id, collection: Student.all %>
+  <%= f.input :course_id, collection: Course.all %>
+  <%= f.input :entry_at, as: :string, input_html: {class: 'date'} %>
+
+  <%= f.button :submit, 'Salvar' %>
+  <%= link_to 'Cancelar', courses_path %>
+<% end %>

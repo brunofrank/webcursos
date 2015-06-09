@@ -1,0 +1,12 @@
+en:
+  enumerations:
+    student_status_enum:
+      active: "Active"
+      inactive: "Inactive"
+
+
+pt-BR:
+  enumerations:
+    student_status_enum:
+      active: "Ativo"
+      inactive: "Inativo"

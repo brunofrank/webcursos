@@ -1,0 +1,66 @@
+ul.vertical.block {
+  margin-top: 20px;
+}
+
+ul.vertical.block li{
+  display: inline-block;
+  background: image-url('vertical_block.png') no-repeat;
+  height: 150px;
+  width: 150px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul.homes{
+
+}
+
+ul.homes li {
+  display: inline-block;
+  background: image-url('vertical_home.png') no-repeat;
+  background-size: 128px 128px;
+  height: 150px;
+  width: 150px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;  
+
+}
+
+.btn-main-action-dashboard{
+  margin-bottom: 20px;
+}
+
+#actions{
+  text-align: right;
+}
+
+.tag-label{
+  font-weight: bold;
+  color: black;
+  margin-right: 10px;
+}
+
+.label{
+  padding: 5px;
+  font-size: 12px;
+}
+
+.status-box{
+  text-align: right;
+}
+
+.actions{
+  margin-top: 13px;
+}
+
+#mobile-back-btn{
+  display: none;
+}
+
+.external-exam{
+  background-color: #fdfdff;
+}

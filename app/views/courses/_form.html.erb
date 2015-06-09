@@ -1,0 +1,10 @@
+<%= simple_form_for(@course) do |f| %>
+  <%= f.error_notification %>
+  
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :status, collection: CourseStatusEnum.to_a %>
+
+  <%= f.button :submit, 'Salvar' %>
+  <%= link_to 'Cancelar', courses_path %>
+<% end %>
